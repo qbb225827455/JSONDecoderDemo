@@ -79,6 +79,10 @@ class TableViewController: UITableViewController {
                 let location = jsonLoan["location"] as! [String:AnyObject]
                 loan.country = location["country"] as! String
                 
+                
+                let geo = location["geo"] as! [String:AnyObject]
+                loan.level = geo["level"] as! String
+                
                 loans.append(loan)
             }
             
@@ -103,6 +107,7 @@ class TableViewController: UITableViewController {
                 cell.countryLabel.text = loan.country
                 cell.useLabel.text = loan.use
                 cell.amountLabel.text = "$\(loan.amount)"
+                print(loan.level)
                 
                 return cell
         })

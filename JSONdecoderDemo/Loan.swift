@@ -12,4 +12,5 @@ struct Loan: Hashable {
     var country: String = ""
     var use: String = ""
     var amount: Int = 0
+    var level: String = ""
 }
