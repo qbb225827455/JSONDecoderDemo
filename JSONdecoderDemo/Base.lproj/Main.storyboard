@@ -17,17 +17,17 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="datacell" id="eG6-bz-yV4" customClass="TableViewCell" customModule="JSONdecoderDemo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="78.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="97.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eG6-bz-yV4" id="IwA-48-DnU">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="78.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="97.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lMI-0k-9LY">
-                                            <rect key="frame" x="5" y="0.0" width="404" height="73.5"/>
+                                            <rect key="frame" x="26" y="11" width="362" height="73.5"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Mtb-b2-gab">
-                                                    <rect key="frame" x="0.0" y="0.0" width="286.5" height="73"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="244.5" height="73"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vR-SZ-FNS">
                                                             <rect key="frame" x="0.0" y="0.0" width="55.5" height="27.5"/>
@@ -50,7 +50,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Amount" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77k-Mb-pl8">
-                                                    <rect key="frame" x="296.5" y="0.0" width="107.5" height="40"/>
+                                                    <rect key="frame" x="254.5" y="0.0" width="107.5" height="40"/>
                                                     <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="29"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -59,12 +59,18 @@
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="lMI-0k-9LY" secondAttribute="trailing" constant="5" id="3Ug-W2-M5A"/>
-                                        <constraint firstAttribute="bottom" secondItem="lMI-0k-9LY" secondAttribute="bottom" constant="5" id="cU6-IB-LhB"/>
-                                        <constraint firstItem="lMI-0k-9LY" firstAttribute="leading" secondItem="IwA-48-DnU" secondAttribute="leading" constant="5" id="i38-zs-mvw"/>
-                                        <constraint firstItem="lMI-0k-9LY" firstAttribute="top" secondItem="IwA-48-DnU" secondAttribute="top" id="pFL-PM-NnK"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="lMI-0k-9LY" secondAttribute="trailing" constant="6" id="7Yp-Pn-Go0"/>
+                                        <constraint firstItem="lMI-0k-9LY" firstAttribute="top" secondItem="IwA-48-DnU" secondAttribute="topMargin" id="9yE-Pc-XRD"/>
+                                        <constraint firstItem="lMI-0k-9LY" firstAttribute="leading" secondItem="IwA-48-DnU" secondAttribute="leadingMargin" constant="6" id="TKH-yv-XrJ"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="lMI-0k-9LY" secondAttribute="bottom" constant="2" id="vDV-O4-DYg"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="amountLabel" destination="77k-Mb-pl8" id="bbv-gI-Csj"/>
+                                    <outlet property="countryLabel" destination="0eV-1D-cWz" id="w3L-Pz-icr"/>
+                                    <outlet property="nameLabel" destination="0vR-SZ-FNS" id="SQ6-d7-snB"/>
+                                    <outlet property="useLabel" destination="Ugy-RO-Y5b" id="rfg-8o-gJ1"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -14,6 +14,7 @@
 		EEE4067528A253250085EB75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE4067328A253250085EB75 /* LaunchScreen.storyboard */; };
 		EEE4067D28A256CF0085EB75 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4067C28A256CF0085EB75 /* TableViewController.swift */; };
 		EEE4067F28A256E20085EB75 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4067E28A256E20085EB75 /* TableViewCell.swift */; };
+		EEE4068128A260F20085EB75 /* Loan.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4068028A260F20085EB75 /* Loan.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EEE4067628A253250085EB75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEE4067C28A256CF0085EB75 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		EEE4067E28A256E20085EB75 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		EEE4068028A260F20085EB75 /* Loan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loan.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +62,13 @@
 			children = (
 				EEE4066828A253250085EB75 /* AppDelegate.swift */,
 				EEE4066A28A253250085EB75 /* SceneDelegate.swift */,
-				EEE4067C28A256CF0085EB75 /* TableViewController.swift */,
-				EEE4067E28A256E20085EB75 /* TableViewCell.swift */,
 				EEE4066E28A253250085EB75 /* Main.storyboard */,
 				EEE4067128A253250085EB75 /* Assets.xcassets */,
 				EEE4067328A253250085EB75 /* LaunchScreen.storyboard */,
 				EEE4067628A253250085EB75 /* Info.plist */,
+				EEE4067C28A256CF0085EB75 /* TableViewController.swift */,
+				EEE4067E28A256E20085EB75 /* TableViewCell.swift */,
+				EEE4068028A260F20085EB75 /* Loan.swift */,
 			);
 			path = JSONdecoderDemo;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEE4066928A253250085EB75 /* AppDelegate.swift in Sources */,
+				EEE4068128A260F20085EB75 /* Loan.swift in Sources */,
 				EEE4067F28A256E20085EB75 /* TableViewCell.swift in Sources */,
 				EEE4067D28A256CF0085EB75 /* TableViewController.swift in Sources */,
 				EEE4066B28A253250085EB75 /* SceneDelegate.swift in Sources */,
