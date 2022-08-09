@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		EEE4066928A253250085EB75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4066828A253250085EB75 /* AppDelegate.swift */; };
 		EEE4066B28A253250085EB75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4066A28A253250085EB75 /* SceneDelegate.swift */; };
-		EEE4066D28A253250085EB75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4066C28A253250085EB75 /* ViewController.swift */; };
 		EEE4067028A253250085EB75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE4066E28A253250085EB75 /* Main.storyboard */; };
 		EEE4067228A253250085EB75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE4067128A253250085EB75 /* Assets.xcassets */; };
 		EEE4067528A253250085EB75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEE4067328A253250085EB75 /* LaunchScreen.storyboard */; };
+		EEE4067D28A256CF0085EB75 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4067C28A256CF0085EB75 /* TableViewController.swift */; };
+		EEE4067F28A256E20085EB75 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE4067E28A256E20085EB75 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EEE4066528A253250085EB75 /* JSONdecoderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSONdecoderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE4066828A253250085EB75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEE4066A28A253250085EB75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EEE4066C28A253250085EB75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EEE4066F28A253250085EB75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEE4067128A253250085EB75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEE4067428A253250085EB75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEE4067628A253250085EB75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEE4067C28A256CF0085EB75 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EEE4067E28A256E20085EB75 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				EEE4066828A253250085EB75 /* AppDelegate.swift */,
 				EEE4066A28A253250085EB75 /* SceneDelegate.swift */,
-				EEE4066C28A253250085EB75 /* ViewController.swift */,
+				EEE4067C28A256CF0085EB75 /* TableViewController.swift */,
+				EEE4067E28A256E20085EB75 /* TableViewCell.swift */,
 				EEE4066E28A253250085EB75 /* Main.storyboard */,
 				EEE4067128A253250085EB75 /* Assets.xcassets */,
 				EEE4067328A253250085EB75 /* LaunchScreen.storyboard */,
@@ -138,8 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEE4066D28A253250085EB75 /* ViewController.swift in Sources */,
 				EEE4066928A253250085EB75 /* AppDelegate.swift in Sources */,
+				EEE4067F28A256E20085EB75 /* TableViewCell.swift in Sources */,
+				EEE4067D28A256CF0085EB75 /* TableViewController.swift in Sources */,
 				EEE4066B28A253250085EB75 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
