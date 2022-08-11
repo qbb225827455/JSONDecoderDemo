@@ -15,7 +15,7 @@ class TableViewController: UITableViewController {
     
     lazy var dataSource = configureDataSource()
     
-    private let kivaLoanURL = "https://api.kivaws.org/v1/loans/newest.json"
+    private let apiURL = "https://api.kivaws.org/v1/loans/newest.json"
     private var loans = [Loan]()
 
     override func viewDidLoad() {
@@ -31,11 +31,11 @@ class TableViewController: UITableViewController {
     
     @objc func getLoans() {
         
-        guard let loanURL = URL(string: kivaLoanURL) else {
+        guard let URL = URL(string: apiURL) else {
             return
         }
         
-        let request = URLRequest(url: loanURL)
+        let request = URLRequest(url: URL)
         let task = URLSession.shared.dataTask(with: request, completionHandler: { data, response, error -> Void in
             
             if let error = error {
@@ -88,9 +88,10 @@ class TableViewController: UITableViewController {
                 let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! TableViewCell
                 
                 cell.nameLabel.text = loan.name
-                cell.countryLabel.text = loan.country
+                cell.countryLabel.text = loan.location.country
                 cell.useLabel.text = loan.use
                 cell.amountLabel.text = "$\(loan.amount)"
+                print("pairs:\(loan.location.geo.pairs) & level:\(loan.location.geo.level)")
                 
                 return cell
         })
